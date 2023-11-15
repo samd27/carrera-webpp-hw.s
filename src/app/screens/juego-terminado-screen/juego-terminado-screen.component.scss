@@ -1,0 +1,136 @@
+.wrapper{
+    overflow-y: hidden!important;
+    overflow-y: scroll!important;
+    width: 100%;
+    height: 100vh;
+    background-color: #FFFFFF;
+}
+
+
+.excelente{
+    margin-top: 2rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 1 rem;
+}
+
+.line{
+    margin-left: 1rem;
+    width: 5px; 
+    background-color: #CD0000; 
+    height: 40px!important; 
+    float: left;
+}
+
+.title{
+    margin-left: 1rem;
+    top: 132px;
+    left: 36px;
+    width: 228px;
+    height: 20px;
+    /* Fuente */
+    text-align: left;
+    font-family: Avenir-Bold;
+    font-size: 20px;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+}
+
+.section-puntuacion{
+    width: 100%;
+    height: 47.2vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.rectangulo{
+    margin-top: 2rem;
+    top: 184px;
+    left: 135px;
+    width: 90px;
+    height: 160px;
+    background: #CD0000;
+    opacity: 1;
+}
+
+.text-red{
+    font-size: 16px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-family: Avenir-Bold;
+    letter-spacing: 0px;
+    color: #CD0000;
+    opacity: 1;
+}
+
+.numPuntos{
+    font-size: 72px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-family: Avenir-Bold;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+}
+
+.txtPuntos{
+    text-align: center;
+    font-family: Avenir;
+    font-size: 24px;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.textoDucati{
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height:  10vh;
+    white-space: pre-line;
+}
+
+.txt-1{
+    text-align: center;
+    font-family: Avenir;
+    font-size: 16px;
+    letter-spacing: 0px;
+    color: #000000;
+}
+
+.txt-2{
+    text-align: center;
+    font-family: Avenir-Bold;
+    font-size: 16px;
+    letter-spacing: 0px;
+    color: #000000;
+}
+
+.mat-flat-button{
+    width: 188px;
+    height: 40px;
+    background: #CD0000;
+    opacity: 1;
+    //Fuente
+    .text-btn{
+        text-align: center;
+        font-family: Avenir;
+        font-size: 16px;
+        letter-spacing: 0.8px;
+        color: #FFFFFF;
+        opacity: 1;
+    }
+}
