@@ -1,0 +1,105 @@
+
+<section class="politica-privaciad">
+    <ng-container *ngIf="isMobile(); else isDesktop">
+    <div class="wrapper">
+        <mat-drawer-container>
+            <mat-drawer #drawer mode='over' position="start">
+                <app-left-sidebar (cerrar)="drawer.toggle()"></app-left-sidebar>
+            </mat-drawer>
+            <app-header-app (drawer)="drawer.toggle()"></app-header-app>
+
+            <div class="body-politica">
+                <div class="txt-politica">
+                    <div class="line-color">
+                        <div class="line" style="height: 111px;"></div>
+                    </div>
+                    <span class="title">POLÍTICA DE PRIVACIDAD</span>
+                </div>
+
+                <div class="txt-section mt-5 mb-5">
+                    <span class="txt">
+                        At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est. 
+                        <br>
+                        <br>
+                        <br>
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore 
+                        magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, 
+                        no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
+                        sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+                        <br>
+                        <br>
+                        <br>
+                        At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem 
+                        ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut. 
+                        <br>
+                        <br>
+                        <br>
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna 
+                        aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+                        <br>
+                        <br>
+                        <br>
+                        Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur 
+                        sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+                  
+                    </span>
+                </div>
+                <div class="footer">
+                    <app-footer-app></app-footer-app>
+                </div>
+            </div>
+        </mat-drawer-container>
+    </div>
+    </ng-container>
+    <ng-template #isDesktop>
+        <div class="wrapper">
+            <mat-drawer-container>
+                <mat-drawer #drawer mode='over' position="start">
+                    <app-left-sidebar (cerrar)="drawer.toggle()"></app-left-sidebar>
+                </mat-drawer>
+                <app-header-app (drawer)="drawer.toggle()"></app-header-app>
+    
+                <div class="body-politica">
+                    <div class="txt-politica">
+                        <div class="line-color">
+                            <div class="line" style="height: 111px;"></div>
+                        </div>
+                        <span class="title">POLÍTICA DE PRIVACIDAD</span>
+                    </div>
+    
+                    <div class="txt-section-desktop mt-5 mb-5">
+                        <span class="txt">
+                            At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est. 
+                            <br>
+                            <br>
+                            <br>
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore 
+                            magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, 
+                            no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
+                            sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+                            <br>
+                            <br>
+                            <br>
+                            At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem 
+                            ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut. 
+                            <br>
+                            <br>
+                            <br>
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna 
+                            aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+                            <br>
+                            <br>
+                            <br>
+                            Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur 
+                            sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+                      
+                        </span>
+                    </div>
+                    <div class="footer">
+                        <app-footer-app></app-footer-app>
+                    </div>
+                </div>
+            </mat-drawer-container>
+        </div>
+    </ng-template>
+</section>

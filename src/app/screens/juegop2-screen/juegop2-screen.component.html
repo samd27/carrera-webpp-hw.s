@@ -1,0 +1,16 @@
+<section class="juegop2">
+    <ng-container *ngIf="isMobile(); else isDesktop">
+        <div class="wrapper">
+            <div class="juego-body">
+                <img src="/assets/images/juego-moto-img.png" class="juego-Mobile" (click)="juegoTerminado()"> 
+            </div> 
+        </div> 
+    </ng-container>
+    <ng-template #isDesktop>
+        <div class="wrapper-desktop">
+            <div class="juego-body-desktop">
+                <img src="/assets/images/juego-moto-img.png" class="juego-Desktop" (click)="juegoTerminado()"> 
+            </div> 
+        </div> 
+    </ng-template>
+</section>

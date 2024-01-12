@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-registro-screen',
@@ -17,8 +18,11 @@ export class RegistroScreenComponent implements OnInit {
   //contraseña
   public hide_1: boolean = false;
   public inputType_1: string = 'password';
+  //router: any;
 
-  constructor() { }
+  constructor(
+    private router: Router,
+  ) { }
 
   ngOnInit(): void {
     this.llenarArrayEdades();
@@ -31,15 +35,15 @@ export class RegistroScreenComponent implements OnInit {
   }
 
   public terminosCondiciones(){
-
+    this.router.navigate(["terminos-condiciones"]);
   }
 
   public registrar(){
-
+    this.router.navigate(["home"]);
   }
 
   public goLogin(){
-    
+    this.router.navigate([""]);
   }
 
   showPassword(){

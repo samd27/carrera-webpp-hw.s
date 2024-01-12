@@ -1,5 +1,4 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { HomeScreenComponent } from './home-screen.component';
 
 describe('HomeScreenComponent', () => {
